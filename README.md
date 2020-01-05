@@ -1,4 +1,4 @@
-# Publishes docker containers
+# Publishes Docker images
 
 This Action for [Docker](https://www.docker.com/) uses the Git branch as the [Docker tag](https://docs.docker.com/engine/reference/commandline/tag/) for building and pushing the container.
 
