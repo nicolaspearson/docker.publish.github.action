@@ -1,10 +1,9 @@
 name: "Publish Docker"
-description: "Publish Docker images"
+description: "Uses the git branch as the docker tag and pushes the images"
 author: "Nicolas Pearson"
 branding:
   icon: "anchor"
   color: "blue"
-description: "Uses the git branch as the docker tag and pushes the container"
 inputs:
   name:
     description: "The name of the image you would like to push"
