@@ -1,11 +1,11 @@
-name: integration test github
+name: publish
 on: [push]
 jobs:
   build:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@master
-      - name: Publish to Registry
+      - name: Publish to github registry
         uses: nicolaspearson/docker.publish.github.action@master
         with:
           name: docker.pkg.github.com/nicolaspearson/docker.publish.github.action/docker.publish.github.action
