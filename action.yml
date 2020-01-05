@@ -1,4 +1,4 @@
-name: "Publish Docker"
+name: "Docker Tag & Publish"
 description: "Uses the git branch as the docker tag and pushes the images"
 author: "Nicolas Pearson"
 branding:
