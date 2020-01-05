@@ -1,0 +1,14 @@
+name: integration test github
+on: [push]
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@master
+      - name: Publish to Registry
+        uses: nicolaspearson/docker.publish.github.action@master
+        with:
+          name: docker.pkg.github.com/nicolaspearson/docker.publish.github.action
+          username: ${{ secrets.DOCKER_GITHUB_USERNAME }}
+          password: ${{ secrets.DOCKER_GITHUB_PASSWORD }}
+          registry: docker.pkg.github.com
